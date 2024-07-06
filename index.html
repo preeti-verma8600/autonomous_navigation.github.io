@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Enhancing Autonomous Exploration and Navigation in Unknown Environments: A Software Architecture for Turtlebot Robot</title>
+  <link rel="icon" type="image/x-icon" href="static/pdfs/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Enhancing Autonomous Exploration and Navigation in Unknown Environments: A Software Architecture for Turtlebot Robot</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/preeti-verma8600/preeti-verma8600.github.io" target="_blank">Preeti Verma</a><sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="author-block">
+                    <a href="https://www.linkedin.com/in/adeola-joseph/" target="_blank">Joseph Adeola</a><sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="author-block">
+                    <a href="https://github.com/MosesEbere" target="_blank">Moses Chuka Ebere</a><sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=PrYvto8AAAAJ&hl=en" target="_blank">Narcı́s Palomeras</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>University of Girona</span>&nbsp;&nbsp;
+                    <span class="author-block"><sup>2</sup>EMJM in Intelligent Field Robotic Systems</span>&nbsp;&nbsp;
+                  </div>
+                  <div class="logo-container">
+                    <img src="./static/images/udg.png" />
+                    <img src="./static/images/ifros.png" />
+                  </div>
+                  <!-- <div class="column has-text-centered">
+                    <div class="publication-links"> -->
+                         <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+                  
+                  <!-- PDF Link -->
+                  <span class="link-block">
+                    <a href="https://drive.google.com/file/d/1PBBUj2OgENMXlaPxH5oxS4nlkR7BIspx/view"" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                  <!-- Video Link -->
+                  <span class="link-block">
+                    <a href="https://drive.google.com/drive/folders/1r8s07A8GESW2xEwu58wazuEmoUAABT3_" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-google-drive"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/preeti-verma8600/autonomous_navigation.github.io" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This research presents a software architecture designed to enable autonomous exploration and navigation for the Turtlebot robot in uncharted environments. The architecture integrates cutting-edge technologies, including a frontier-based exploration algorithm combining Multiple Rapidly-exploring Random Trees (MRRT) and Mean Shift clustering. With a high-resolution 2D Lidar, the robot achieves precise obstacle detection and mapping.
+            The path planning module utilizes the Open Motion Planning Library (OMPL) and a customized Dubins state space, generating collision-free paths that navigate dynamic constraints. Optimization techniques, such as a comprehensive cost function and post-processing methodologies, enhance path quality.
+            The low-level controller, employing the Dynamic Window Approach, ensures smooth navigation and real-time obstacle avoidance. The software architecture is versatile, accommodating real-world and simulated scenarios for comprehensive evaluation.
+            Experiments were conducted in both real-world and simulated scenarios to assess its performance. The results demonstrate improved exploration capabilities and collision-free path planning in dynamic environments.
+            By addressing the challenges of unknown environments, this research contributes to the field of autonomous robotics, offering insights into the practical implementation of autonomous exploration and navigation systems.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Paper video. -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-3">Simulation Video</h2>
+    <div class="publication-video">
+      <iframe src="https://drive.google.com/file/d/1RycwcICvbDNGwVo2LzIz3QIRni1FGWvE/view?usp=drive_link"
+        frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Paper video. -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-3">Real-Robot Video</h2>
+    <div class="publication-video">
+      <iframe src="https://drive.google.com/file/d/1fpwyqLnYkeVfgQACtkmG4f_qg_WIAAzI/view?usp=drive_link"
+        frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End teaser video -->
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Experiment in Realsense D400 Series</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-D405">
+          <img src="./static/images/D405.png" id="D405" alt="Blue Block" height="100%">
+          <div class="subtitle has-text-centered">D405</div>
+        </div>
+        <div class="item item-D415">
+          <img src="./static/images/D415.png" id="D415" alt="Metal" height="100%">
+          <div class="subtitle has-text-centered">D415</div>
+        </div>
+        <div class="item item-D435">
+          <img src="./static/images/D435.png" id="D435" alt="Orange Block" height="100%">
+          <div class="subtitle has-text-centered">D435</div>
+        </div>
+        <div class="item item-D435i">
+          <img src="./static/images/D435i.png" id="D435i" alt="Plier" height="100%">
+          <div class="subtitle has-text-centered">D435i</div>
+        </div>
+        <div class="item item-D455">
+          <img src="./static/images/D455.png" id="D455" alt="Scissor" height="100%">
+          <div class="subtitle has-text-centered">D455</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+
+      <!-- Animation. -->
+      <div class="rows is-centered ">
+        <div class="row is-full-width">
+            <!--/ Methodology. -->
+            <h2 class="title is-3">Methodology</h2>
+
+            <div class="container">
+              <div class="columns is-vcentered is-centered">
+                <img src="./static/images/exploration.png" alt="Exploration Strategy" class="image-fit" />
+                </br>
+              </div>
+              <br>
+              <h2 class="subtitle has-text-centered">
+                <h3>A. Automatic Exploration Strategy</h3>
+                <p>
+                  This project utilizes multiple Rapidly-exploring Random Trees (RRTs) to guide the Turtlebot towards unexplored areas. The strategy includes:
+                </p>
+                <ul>
+                  <li><strong>RRT-based Frontier Detector</strong>: Identifies frontier points using local and global detectors.</li>
+                  <li><strong>Filter</strong>: Clusters and filters frontier points using the mean-shift algorithm.</li>
+                  <li><strong>Robot Task Allocator</strong>: Assigns frontier points to robots based on navigation cost, information gain, and calculated revenue.</li>
+                </ul>
+
+                <h3>B. Path Planner</h3>
+                <p>
+                  The path planner uses the Open Motion Planning Library (OMPL) to generate collision-free paths. It includes:
+                </p>
+                <ul>
+                  <li><strong>State Validity Checker</strong>: Ensures collision-free positions and paths using an occupancy map.</li>
+                  <li><strong>Path Planning</strong>: Utilizes the SE2 state space, RRT* planner, and optimization objectives to generate and simplify paths, balancing length and clearance.</li>
+                </ul>
+
+                <h3>C. Low-Level Controller</h3>
+                <p>
+                  The controller uses proportional control and a dynamic window approach to determine optimal velocities. It involves:
+                </p>
+                <ul>
+                  <li>Computing the dynamic window of permissible velocities.</li>
+                  <li>Predicting and evaluating trajectory costs.</li>
+                  <li>Selecting and applying the best trajectory to guide the robot.</li>
+                </ul>
+
+                <h3>Implementation</h3>
+                <p>
+                  The project is structured as a ROS package with five nodes: exploration, controller, planner, integration, and SLAM. The SLAM node generates maps and localizes the robot. The exploration node assigns goals, the planner node generates paths using RRT*, and the controller node ensures smooth navigation.
+                </p>
+              </h2>
+            </div>
+            <br>
+            <br>
+            <!--/ Results. -->
+            <h2 class="title is-3">Results</h2>
+            <div class="container">
+              <div class="columns is-vcentered is-centered">
+                <div class="column is-narrow">
+                  <img src="./static/images/rrt_global_tree.png" alt="results1" class="image-fit"/>
+                  <div class="subtitle has-text-centered">Expansion on global tree nodes, indicated by red spheres, in
+                    environment while exploration</div>
+                </div>
+                <div class="column is-narrow">
+                  <img src="./static/images/clustering1.png" alt="results2" class="image-fit"/>
+                  <div class="subtitle has-text-centered">Clustering of frontiers using Mean-Shift algorithm</div>
+                </div>
+              </div>
+              <br>
+              <div class="columns is-vcentered is-centered">
+                <div class="column is-narrow">
+                  <img src="./static/images/rrt_global_tree.png" alt="results1" class="image-fit"/>
+                  <div class="subtitle has-text-centered">Expansion on global tree nodes, indicated by red spheres, in
+                    environment while exploration</div>
+                </div>
+                <div class="column is-narrow">
+                  <img src="./static/images/clustering1.png" alt="results2" class="image-fit"/>
+                  <div class="subtitle has-text-centered">Clustering of frontiers using Mean-Shift algorithm</div>
+                </div>
+              </div>
+              <br>
+              <h2 class="subtitle has-text-centered">
+                The RRT-based frontier detection with optimized parameters ensures efficient exploration. Simulation results demonstrate effective exploration without significant impact on time or distance. Real-world experiments confirm the approach's viability, showing consistency with simulation findings despite slightly increased exploration time. Future improvements include integrating additional sensors and machine learning techniques.
+              </h2>
+            </div>
+            <br>
+            <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+<section class="section" id="acknowledgements">
+  <div class="container content is-max-desktop">
+    <h2 class="title">Acknowledgements</h2>
+    <p>This project is part of the IFRoS program course. If you are interested in the project or wish to utilize it for any purpose, please contact the author first.</p>
+    <p>The page template is borrowed from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page, with special thanks to them. This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+  </div>
+</section>
+
+  <!-- <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            We borrow the page template from  <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. Special thanks to them!
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
