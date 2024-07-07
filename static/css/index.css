@@ -168,3 +168,7 @@ body {
   width: auto;
   height: auto;
 }
+
+.has-text-centered {
+  text-align: center;
+}
