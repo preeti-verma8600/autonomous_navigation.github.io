@@ -213,7 +213,7 @@
       <div class="rows is-centered ">
         <div class="row is-full-width">
             <!--/ Methodology. -->
-            <h2 class="title is-3">Methodology</h2>
+<!--             <h2 class="title is-3">Methodology</h2>
 
             <div class="container">
               <div class="columns is-vcentered is-centered">
@@ -256,7 +256,53 @@
                   The project is structured as a ROS package with five nodes: exploration, controller, planner, integration, and SLAM. The SLAM node generates maps and localizes the robot. The exploration node assigns goals, the planner node generates paths using RRT*, and the controller node ensures smooth navigation.
                 </p>
               </h2>
+            </div> -->
+            <h2 class="title is-3 has-text-centered">Methodology</h2>
+
+            <div class="container">
+              <div class="columns is-vcentered is-centered">
+                <div class="column is-narrow has-text-centered">
+                  <img src="./static/images/exploration.png" alt="Exploration Strategy" class="image-fit"/>
+                </div>
+              </div>
+              <br>
+              <div class="content">
+                <h3>A. Automatic Exploration Strategy</h3>
+                <p>
+                  This project utilizes multiple Rapidly-exploring Random Trees (RRTs) to guide the Turtlebot towards unexplored areas. The strategy includes:
+                </p>
+                <ul>
+                  <li><strong>RRT-based Frontier Detector</strong>: Identifies frontier points using local and global detectors.</li>
+                  <li><strong>Filter</strong>: Clusters and filters frontier points using the mean-shift algorithm.</li>
+                  <li><strong>Robot Task Allocator</strong>: Assigns frontier points to robots based on navigation cost, information gain, and calculated revenue.</li>
+                </ul>
+            
+                <h3>B. Path Planner</h3>
+                <p>
+                  The path planner uses the Open Motion Planning Library (OMPL) to generate collision-free paths. It includes:
+                </p>
+                <ul>
+                  <li><strong>State Validity Checker</strong>: Ensures collision-free positions and paths using an occupancy map.</li>
+                  <li><strong>Path Planning</strong>: Utilizes the SE2 state space, RRT* planner, and optimization objectives to generate and simplify paths, balancing length and clearance.</li>
+                </ul>
+            
+                <h3>C. Low-Level Controller</h3>
+                <p>
+                  The controller uses proportional control and a dynamic window approach to determine optimal velocities. It involves:
+                </p>
+                <ul>
+                  <li>Computing the dynamic window of permissible velocities.</li>
+                  <li>Predicting and evaluating trajectory costs.</li>
+                  <li>Selecting and applying the best trajectory to guide the robot.</li>
+                </ul>
+            
+                <h3>Implementation</h3>
+                <p>
+                  The project is structured as a ROS package with five nodes: exploration, controller, planner, integration, and SLAM. The SLAM node generates maps and localizes the robot. The exploration node assigns goals, the planner node generates paths using RRT*, and the controller node ensures smooth navigation.
+                </p>
+              </div>
             </div>
+
             <br>
             <br>
             <!--/ Results. -->
