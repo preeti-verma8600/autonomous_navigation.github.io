@@ -172,3 +172,10 @@ body {
 .has-text-centered {
   text-align: center;
 }
+
+/* New class to format content */
+.content {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
