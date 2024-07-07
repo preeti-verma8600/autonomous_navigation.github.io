@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project presents a software architecture for autonomous exploration and navigation using the Turtlebot robot in uncharted environments. It integrates a frontier-based exploration algorithm, high-resolution 2D Lidar for precise mapping, and advanced path planning with the Open Motion Planning Library (OMPL). The system ensures smooth navigation and real-time obstacle avoidance, validated through experiments in both real-world and simulated scenarios, demonstrating improved exploration capabilities and collision-free path planning.
+This project presents a architecture for autonomous exploration and navigation using the Turtlebot robot in uncharted environments. It integrates a frontier-based exploration algorithm, high-resolution 2D Lidar for precise mapping, and advanced path planning with the Open Motion Planning Library (OMPL). The system ensures smooth navigation and real-time obstacle avoidance, validated through experiments in both real-world and simulated scenarios, demonstrating improved exploration capabilities and collision-free path planning.
 
 [Project Link](https://preeti-verma8600.github.io/autonomous_navigation.github.io).
 
