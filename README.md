@@ -9,8 +9,8 @@ This project presents a software architecture for autonomous exploration and nav
 ### Project Members
 
 - Preeti Verma
-- Moses Chuka Ebere
 - Joseph Adeola
+- Moses Chuka Ebere
 
 ### Acknowledgments
 
